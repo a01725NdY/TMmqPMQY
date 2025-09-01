@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Cloning Source Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
         with:
           submodules: 'recursive'
 
@@ -19,7 +19,7 @@ jobs:
         run: mkdir -p app/lib
 
       - name: Cloning Library Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
         with:
           repository: 'vpj/weya'
           submodules: 'recursive'
